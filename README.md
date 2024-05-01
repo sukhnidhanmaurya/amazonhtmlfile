@@ -1,1 +1,1 @@
-amazonclone file
+Amazon clone file
