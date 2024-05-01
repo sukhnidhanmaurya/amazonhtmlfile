@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
+  <link rel="stylesheet" href="mystyle.css">
+<!--<script src="index.js"></script>-->
+</head>
+<body>
+  <header>
+    <div>
+    <div class="navbar">
+      <div class="nav-logo border">
+      <div class="logo"></div>
+    </div>
+
+    <div class="nav-address border">
+    <p class="add-first">Deliver to</p>
+    <div class="add-icon">
+    <i class="fa-solid fa-location-dot"></i>
+    <p class="add-second">India</p>
+    </div>
+    </div>
+
+    <div class="nav-search">
+        <select class="search-select">
+            <option>All</option>
+            </select>
+            <input placeholder="search amazon" class="search-input">
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>  
+            </div>
+    </div>
+  
+
+    <div class="nav-signin">
+        <p><span>Hello, sign in </span></p>
+        <p class="nav-second"> Account & Lists</p>
+        </div>
+    
+
+    <div class="nav-returns border">
+        <p><span>returns</span></p>
+        <p class="nav-second">& orders </p>
+        </div>
+    
+
+    <div class="nav-cart border">
+        <i class="fa-solid fa-cart-shopping"></i>
+        Cart
+
+  </div>
+  </div>
+  
+   <div class="panel">
+    <div class="panel-all">
+      <i class="fa-solid fa-bars"></i>
+      All
+    </div>
+    <div class="panel-ops">
+      <p>Today's Deals</p>
+      </p>Customer Service</p>
+      <p>Registry</p>
+      <p>Gift Cards</p>
+      <p>Sell</p>
+    </div>
+    <div class="panel-deals">
+      Shop deals in Elecctronics
+    </div>
+   </div>
+  </header>
+  
+  <div class="hero-section">
+    <div class="hero-msg">
+      <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a>Click here to go to amazon.in</a></p>
+    </div>
+  </div>
+  <div class="shop-section">
+    <div class="box">
+     <div class="box-content">
+      <h2>Shop holiday gift guides</h2>
+      <div class="box-img" style="background-image: url('Fuji_Holiday_Gift_guide.jpg');"></div>
+      <p>See more</p>
+     </div>
+    </div>
+    <div class="box"> 
+      <div class="box-content">
+      <h2>Deals in PCs</h2>
+      <div class="box-img" style="background-image: url('8xekq5yi.png');"></div>
+      <p>See more</p>
+    </div>
+    </div>
+    <div class="box">
+      <div class="box-content">
+        <h2>Holiday deals in fashion</h2>
+        <div class="box-img" style="background-image: url('hoidays-deals-in-fashion.jpg');"></div>
+        <p>See more</p>
+    </div>
+    </div>
+    <div class="box">
+      <div class="box-content">
+        <h2>Small gifts under $20</h2>
+        <div class="box-img" style="background-image: url('small-gifts-under.jpg');"></div>
+        <p>See more</p>
+      </div>
+      </div>
+  </div>
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    
+</body>
+</html>
